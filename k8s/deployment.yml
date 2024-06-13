@@ -1,0 +1,31 @@
+# fastapi-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customer-data-app
+  namespace: customer-data-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: customer-data-app
+  template:
+    metadata:
+      labels:
+        app: customer-data-app
+    spec:
+      containers:
+        - name: customer-data-app
+          image: dsexplorer/customer_data_api:latest
+          imagePullPolicy: Always
+          env:
+            - name: DATABASE_URL
+              value: "postgresql://seb:seb@postgres:5432/seb"
+          ports:
+            - containerPort: 8000
+          command:
+            [
+              "sh",
+              "-c",
+              "fastapi dev /api/customer/customer.py --host 0.0.0.0 --port 8000",
+            ]

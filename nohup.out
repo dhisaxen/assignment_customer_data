@@ -1,0 +1,129 @@
+docker: Error response from daemon: driver failed programming external connectivity on endpoint festive_elgamal (78aea662802ba2f92b416ce2b4ed3b4e3922d5ad89e8dfad37240d5ac5ef78a8): Bind for 0.0.0.0:8080 failed: port is already allocated.
+docker: Error response from daemon: driver failed programming external connectivity on endpoint keen_ishizaka (2f216f4011c1e943dfd80646f8b337759973c6f2534d000f26a4b6f35bf1503d): Bind for 0.0.0.0:8080 failed: port is already allocated.
+docker: Error response from daemon: driver failed programming external connectivity on endpoint interesting_varahamihira (13d3fbb7fcadf1fdbbe6beca6abc5cdfa178d4166b0712f97d91e5b6196ef4e4): Bind for 0.0.0.0:8080 failed: port is already allocated.
+INFO     Using path /api/customer/customer.py                                   
+INFO     Resolved absolute path /api/customer/customer.py                       
+INFO     Searching for package file structure from directories with __init__.py 
+         files                                                                  
+INFO     Importing from /api/customer                                           
+                                                                                
+ ╭─ Python module file ─╮                                                       
+ │                      │                                                       
+ │  🐍 customer.py      │                                                       
+ │                      │                                                       
+ ╰──────────────────────╯                                                       
+                                                                                
+INFO     Importing module customer                                              
+INFO     Found importable FastAPI app                                           
+                                                                                
+ ╭── Importable FastAPI app ──╮                                                 
+ │                            │                                                 
+ │  from customer import app  │                                                 
+ │                            │                                                 
+ ╰────────────────────────────╯                                                 
+                                                                                
+INFO     Using import string customer:app                                       
+                                                                                
+ ╭────────── FastAPI CLI - Development mode ───────────╮                        
+ │                                                     │                        
+ │  Serving at: http://127.0.0.1:8000                  │                        
+ │                                                     │                        
+ │  API docs: http://127.0.0.1:8000/docs               │                        
+ │                                                     │                        
+ │  Running in development mode, for production use:   │                        
+ │                                                     │                        
+ │  fastapi run                                        │                        
+ │                                                     │                        
+ ╰─────────────────────────────────────────────────────╯                        
+                                                                                
+INFO:     Will watch for changes in these directories: ['/']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1] using WatchFiles
+INFO:     Started server process [8]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO     Using path /api/customer/customer.py                                   
+INFO     Resolved absolute path /api/customer/customer.py                       
+INFO     Searching for package file structure from directories with __init__.py 
+         files                                                                  
+INFO     Importing from /api/customer                                           
+                                                                                
+ ╭─ Python module file ─╮                                                       
+ │                      │                                                       
+ │  🐍 customer.py      │                                                       
+ │                      │                                                       
+ ╰──────────────────────╯                                                       
+                                                                                
+INFO     Importing module customer                                              
+INFO     Found importable FastAPI app                                           
+                                                                                
+ ╭── Importable FastAPI app ──╮                                                 
+ │                            │                                                 
+ │  from customer import app  │                                                 
+ │                            │                                                 
+ ╰────────────────────────────╯                                                 
+                                                                                
+INFO     Using import string customer:app                                       
+                                                                                
+ ╭────────── FastAPI CLI - Development mode ───────────╮                        
+ │                                                     │                        
+ │  Serving at: http://127.0.0.1:8000                  │                        
+ │                                                     │                        
+ │  API docs: http://127.0.0.1:8000/docs               │                        
+ │                                                     │                        
+ │  Running in development mode, for production use:   │                        
+ │                                                     │                        
+ │  fastapi run                                        │                        
+ │                                                     │                        
+ ╰─────────────────────────────────────────────────────╯                        
+                                                                                
+INFO:     Will watch for changes in these directories: ['/']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [1] using WatchFiles
+INFO:     Started server process [8]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+time="2024-06-13T00:23:33+02:00" level=error msg="error waiting for container: unexpected EOF"
+INFO     Using path /api/customer/customer.py                                   
+INFO     Resolved absolute path /api/customer/customer.py                       
+INFO     Searching for package file structure from directories with __init__.py 
+         files                                                                  
+INFO     Importing from /api/customer                                           
+                                                                                
+ ╭─ Python module file ─╮                                                       
+ │                      │                                                       
+ │  🐍 customer.py      │                                                       
+ │                      │                                                       
+ ╰──────────────────────╯                                                       
+                                                                                
+INFO     Importing module customer                                              
+INFO     Found importable FastAPI app                                           
+                                                                                
+ ╭── Importable FastAPI app ──╮                                                 
+ │                            │                                                 
+ │  from customer import app  │                                                 
+ │                            │                                                 
+ ╰────────────────────────────╯                                                 
+                                                                                
+INFO     Using import string customer:app                                       
+                                                                                
+ ╭────────── FastAPI CLI - Development mode ───────────╮                        
+ │                                                     │                        
+ │  Serving at: http://127.0.0.1:80                    │                        
+ │                                                     │                        
+ │  API docs: http://127.0.0.1:80/docs                 │                        
+ │                                                     │                        
+ │  Running in development mode, for production use:   │                        
+ │                                                     │                        
+ │  fastapi run                                        │                        
+ │                                                     │                        
+ ╰─────────────────────────────────────────────────────╯                        
+                                                                                
+INFO:     Will watch for changes in these directories: ['/']
+INFO:     Uvicorn running on http://127.0.0.1:80 (Press CTRL+C to quit)
+INFO:     Started reloader process [1] using WatchFiles
+INFO:     Started server process [8]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+1afe29d8e594966053a86176245440105189e32959a3a5f80d77e14a8e3376f8
+docker: Error response from daemon: driver failed programming external connectivity on endpoint vibrant_williamson (058385c588df683878430b4040795d8289f2f3540b40c7648763c95417bd484a): Bind for 0.0.0.0:8000 failed: port is already allocated.

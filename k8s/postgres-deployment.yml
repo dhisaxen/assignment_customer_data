@@ -1,0 +1,38 @@
+# postgres-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres
+  namespace: customer-data-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+        - name: postgres-db
+          image: postgres:13
+          env:
+            - name: POSTGRES_USER
+              value: "seb"
+            - name: POSTGRES_PASSWORD
+              value: "seb"
+            - name: POSTGRES_DB
+              value: "seb"
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: postgres-storage
+              mountPath: /var/lib/postgresql/data
+            - name: postgres-config
+              mountPath: ./postgresql.conf
+      volumes:
+        - name: postgres-storage
+          emptyDir: {}
+        - name: postgres-config
+          emptyDir: {}

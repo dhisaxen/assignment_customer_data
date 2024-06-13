@@ -1,0 +1,27 @@
+services:
+  postgres-db:
+    image: postgres:14-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - ~/apps/postgres:/var/lib/postgresql/data
+      - ./postgresql.conf:/usr/share/postgresql/postgresql.conf.sample
+    environment:
+      - POSTGRES_PASSWORD=seb
+      - POSTGRES_USER=seb
+      - POSTGRES_DB=seb
+    networks:
+      - database
+  
+  api:
+    image: sample_seb_1:latest
+    ports:
+      - 8000:80
+    networks:
+      - database
+    depends_on:
+      - postgres-db
+
+networks:
+  database:
+    driver: bridge

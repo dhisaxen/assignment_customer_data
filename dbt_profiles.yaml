@@ -1,0 +1,12 @@
+seb_customer_data:
+  outputs:
+    dev:
+      dbname: seb
+      host: postgres-db
+      pass: seb
+      port: 5432
+      schema: seb
+      threads: 1
+      type: postgres
+      user: seb
+  target: dev
