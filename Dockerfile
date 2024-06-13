@@ -4,7 +4,7 @@ FROM python:3.9-slim
 WORKDIR /
 
 COPY api api
-COPY seb_customer_data seb_customer_data
+COPY customer_data customer_data
 
 COPY dbt_profiles.yaml profiles.yml
 COPY dbt_project.yml .

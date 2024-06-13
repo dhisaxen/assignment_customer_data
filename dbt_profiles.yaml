@@ -1,4 +1,4 @@
-seb_customer_data:
+customer_data:
   outputs:
     dev:
       dbname: seb
